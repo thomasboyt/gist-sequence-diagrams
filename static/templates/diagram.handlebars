@@ -1,0 +1,15 @@
+<h2>{{description}}</h2>
+
+<div>
+  {{#each files.models}}
+    {{#with this.attributes}}
+    <div class="file">
+      <strong>{{filename}}</strong>
+      <div class="diagram">
+        {{content}}
+      </div>
+      <textarea class="content">{{content}}</textarea>
+    </div>
+    {{/with}}
+  {{/each}}
+</div>

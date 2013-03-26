@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="javascripts/lib/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/lib/underscore-min.js"></script>
+    <script src="javascripts/lib/raphael-min.js"></script>
+    <script src="javascripts/lib/diagram/sequence-diagram-min.js"></script>
+    <script src="javascripts/lib/backbone.js"></script>
+
+    <script>
+      var require = {
+        urlArgs : "bust="+new Date().getTime(),
+        shim: {
+          'handlebars': {
+            exports: "Handlebars"
+          }
+        },
+        paths: {
+          "handlebars": "/javascripts/lib/handlebars.runtime"
+        }
+      };
+    </script>
+    <script data-main="javascripts/app.js" src="javascripts/lib/require.js"></script>
+
+    <title>Gist UML Thing</title>
+  </head>
+<body>
+  <div id="container">
+  </div>
+</body>
+</html>
