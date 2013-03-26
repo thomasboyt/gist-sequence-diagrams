@@ -1,17 +1,9 @@
-<h2>{{description}}</h2>
-
-<div>
-  {{#each files.models}}
-    {{#with this.attributes}}
-    <div class="file">
-      <strong>{{filename}}</strong>
-      <div class="diagram">
-        {{content}}
-      </div>
-      <div class="editor-wrapper">
-        <div class="editable">{{content}}</div>
-      </div>
-    </div>
-    {{/with}}
-  {{/each}}
+<div class="file">
+  <strong>{{filename}}</strong>
+  <div class="diagram">
+    {{content}}
+  </div>
+  <div class="editor-wrapper">
+    <div class="editable">{{content}}</div>
+  </div>
 </div>
