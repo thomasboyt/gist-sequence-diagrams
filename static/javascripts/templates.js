@@ -27,11 +27,11 @@ function program2(depth0,data) {
   if (stack1 = helpers.content) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.content; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "\n      </div>\n      <textarea class=\"content\">";
+    + "\n      </div>\n      <div class=\"editor-wrapper\">\n        <div class=\"editable\">";
   if (stack1 = helpers.content) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.content; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "</textarea>\n    </div>\n    ";
+    + "</div>\n      </div>\n    </div>\n    ";
   return buffer;
   }
 
